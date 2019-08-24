@@ -1,5 +1,11 @@
 ### Coding Android客户端代码说明
 
+### 由于官网的apk使用了腾讯乐加固的原因，在Android Q版本会崩溃，但是官方又不维护了，所以打包了一个没有使用乐加固的apk，所有代码都没有改动，仅仅重新打了一个没有加固的包
+
+[下载地址 5.9.5.20190219.1](https://pan.baidu.com/s/1O6FDjf9Hf46Lk8SeuSWQrQ)
+> 提取码：kpn5 
+复制这段内容后打开百度网盘手机App，操作更方便哦)
+
 ## 编译环境
 Android Studio 3.1.3，根据 `variants` 选择编译企业版或个人版。修改 `gradle.properties.sample` 为 `gradle.properties` 并修改文件中 `keystore` 相关的环境变量，编译企业版的时候，`DEV_ENTERPRISE` 设置为 `true` ,因为用 `gradle` 引用的许多第三方库，所以第一次加载会有点慢，加载完毕后要 `build` 一下，这些带下划线的类（比如 `MainActivity_`）会在build之后自动生成。
 
